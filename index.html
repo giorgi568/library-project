@@ -18,15 +18,15 @@
           <input type="text" name="title" id="title" required>
         </div>
         <div class="wrapper">
-          <label for="title">Author:</label>
+          <label for="author">Author:</label>
           <input type="text" name="author" id="author" required>
         </div>
         <div class="wrapper">
-          <label for="title">Number Of Pages:</label>
+          <label for="pages">Number Of Pages:</label>
           <input type="tel" name="pages" id="pages" required>
         </div>
         <div class="wrapper">
-          <label for="title">Read Or Not :</label>
+          <label for="readOrNot">Read Or Not :</label>
           <input type="text" name="readOrNot" id="readOrNot" required>
         </div>
         <button type="submit" id="btn" value="Submit" form="add-book">Submit</button>
@@ -39,13 +39,15 @@
         <th>Author</th>
         <th>Number Of Pages</th>
         <th>Read Status</th>
+        <th>Action</th>
       </tr>
-      <!-- <tr>
+      <tr>
         <td>title</td>
         <td>author</td>
         <td>numberofpages</td>
         <td>readstatus</td>
-      </tr> -->
+        <td><button type="button" class="watchStatus">change</button></td>
+      </tr>
     </table>
   </div>
 

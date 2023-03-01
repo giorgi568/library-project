@@ -62,20 +62,30 @@ btn.addEventListener("click", (e) => {
   const authorUser = document.querySelector("#author");
   const pagesUser = document.querySelector("#pages");
   const readOrNotUser = document.querySelector("#readOrNot");
-  addBookToLibrary(titleUser.value, authorUser.value, pagesUser.value, readOrNotUser.value);
-
-  titleUser.value = '';
-  authorUser.value = '';
-  pagesUser.value = '';
-  readOrNotUser.value = '';
-
-  // console.log(myLibrary);
-  displayBooks(myLibrary.length-1);
+  if(titleUser.value != '' &&
+    authorUser.value != '' &&
+    pagesUser.value != '' &&
+    readOrNotUser.value != ''){
+      addBookToLibrary(titleUser.value, authorUser.value, pagesUser.value, readOrNotUser.value);
+    
+      titleUser.value = '';
+      authorUser.value = '';
+      pagesUser.value = '';
+      readOrNotUser.value = '';
+    
+      // console.log(myLibrary);
+      displayBooks(myLibrary.length-1);
+    }
 })
 
 const form = document.querySelector("#add-book");
 const btnAdd = document.querySelector("#addNewBook");
 btnAdd.addEventListener("click", (e) => {
-  form.classList.add("active");
-
+  if(form.classList.value !== 'active') {
+    form.classList.add('active');
+    btnAdd.textContent = 'Go Back';
+  }else{
+    form.classList.remove('active')
+    btnAdd.textContent = 'Add New Book'
+  }
 })
