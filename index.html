@@ -10,7 +10,28 @@
 <body>
   <header>library</header>
   <div class="container">
-    <button type="button">Add New Book</button>
+    <button type="button" id="addNewBook">Add New Book</button>
+    <form action="" method="get" id="add-book" autocomplete="off">
+      <fieldset>
+        <div class="wrapper">
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title" required>
+        </div>
+        <div class="wrapper">
+          <label for="title">Author:</label>
+          <input type="text" name="author" id="author" required>
+        </div>
+        <div class="wrapper">
+          <label for="title">Number Of Pages:</label>
+          <input type="tel" name="pages" id="pages" required>
+        </div>
+        <div class="wrapper">
+          <label for="title">Read Or Not :</label>
+          <input type="text" name="readOrNot" id="readOrNot" required>
+        </div>
+        <button type="submit" id="btn" value="Submit" form="add-book">Submit</button>
+      </fieldset>
+    </form>
     <h3>List Of Books:</h3>
     <table class="bookShelf">
       <tr>
