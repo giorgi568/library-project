@@ -65,7 +65,18 @@ input{
   height: 35px;
   font-size: 15px;
 }
-.watchStatus{
+.readStatus{
   height: 20px;
-  font-size: 10px;
+  width: 30px;
+  /* font-size: 10px; */
+}
+#read, #notRead{
+  width: auto;
+}
+.tdAction{
+  display: flex;
+  justify-content: space-around;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

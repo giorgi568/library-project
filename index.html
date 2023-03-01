@@ -11,7 +11,7 @@
   <header>library</header>
   <div class="container">
     <button type="button" id="addNewBook">Add New Book</button>
-    <form action="" method="get" id="add-book" autocomplete="off">
+    <form action="" method="get" id="add-book">
       <fieldset>
         <div class="wrapper">
           <label for="title">Title:</label>
@@ -25,9 +25,12 @@
           <label for="pages">Number Of Pages:</label>
           <input type="tel" name="pages" id="pages" required>
         </div>
-        <div class="wrapper">
-          <label for="readOrNot">Read Or Not :</label>
-          <input type="text" name="readOrNot" id="readOrNot" required>
+        <div class="wrapper4">
+          <label for="readOrNot">Read Or Not :</label><br>
+          <input type="radio" id="read" name="readOrNot" value="read" required>
+          <label for="read">Read</label><br>
+          <input type="radio" id="notRead" name="readOrNot" value="haven't read" required>
+          <label for="notRead">Have Not Read</label>
         </div>
         <button type="submit" id="btn" value="Submit" form="add-book">Submit</button>
       </fieldset>
@@ -41,13 +44,15 @@
         <th>Read Status</th>
         <th>Action</th>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>title</td>
         <td>author</td>
         <td>numberofpages</td>
         <td>readstatus</td>
-        <td><button type="button" class="watchStatus">change</button></td>
-      </tr>
+        <td><button type="button" class="readStatus">
+          <img src="icons/eye-outline.svg" alt="">
+        </button></td>
+      </tr> -->
     </table>
   </div>
 
